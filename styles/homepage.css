@@ -1,0 +1,43 @@
+.frame {
+    height: 80vh;
+    border-radius: 12px;
+    margin: 64px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.object {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.object:active {
+    cursor: grabbing;
+}
+
+.obj1 { left: 40px; top: 40px; border: 16px solid #ffffff; box-sizing: border-box; }
+.obj2 { left: 500px; top: 250px; border: 16px solid #ffffff; box-sizing: border-box; }
+.obj3 { left: 870px; top: 150px; border: 16px solid #ffffff; box-sizing: border-box; }
+.obj4 { left: 300px; top: 400px; border: 16px solid #ffffff; box-sizing: border-box; }
+
+.image-placeholder img {
+    width: 300px;
+    height: auto;
+}
+
+.tape {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 48px;
+    background: #3b82f6;
+    border-radius: 2px;
+    z-index: 2;
+}
