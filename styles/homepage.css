@@ -17,20 +17,19 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .frame {
     height: 80vh;
+    width: 100%;
     border-radius: 12px;
-    margin: 32px auto;
+    margin: 0px auto;
     position: relative;
     overflow: hidden;
 }
 
 .object {
     position: absolute;
-    width: fit-content;
     cursor: grab;
     user-select: none;
     touch-action: none;
@@ -40,24 +39,37 @@
     cursor: grabbing;
 }
 
-.obj1 img, .obj2 img, .obj3 img, .obj4 img {
-    left: 40px;
-    top: 40px;
-    border: 16px solid #ffffff;
-    box-sizing: border-box;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
-    width: 300px;
-    height: auto;
+.obj1 {
+    left: 224px;
+    top: 64px;
+}
+
+.obj2 {
+    left: 404px;
+    top: 369px;
+}
+
+.obj3 {
+    left: 728px;
+    top: 0px;
+}
+
+.obj4 {
+    left: 978px;
+    top: 310px;
 }
 
 .image-placeholder img {
-    width: 300px;
+    border: 20px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+    width: 350px;
     height: auto;
 }
 
 .tape {
     position: relative;
-    top: 24px;
+    top: 28px;
     left: 0;
     transform: none;
     display: block;
@@ -65,6 +77,5 @@
     width: 24px;
     height: 48px;
     background: #3b82f6;
-    border-radius: 2px;
     z-index: 2;
 }
