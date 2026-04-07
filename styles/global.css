@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(249, 248, 246);
+    background-color: rgb(252, 251, 249);
 }
 
 @font-face {
@@ -7,25 +7,28 @@ body {
   src: url(https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap) /* url of the font */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 h1, h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 18px;
     text-align: center;
     margin-top: 32px;
 }
 
 a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: #000000;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
 }
 
 a:hover {
     text-decoration: underline;
     color: #000000;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
 }

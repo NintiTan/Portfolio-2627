@@ -1,0 +1,3 @@
+Current problems:
+
+1. How do I make the images draggable and clickable seemlessly?

@@ -6,6 +6,14 @@ items.forEach((item) => {
         e.preventDefault();
         item.setPointerCapture(e.pointerId);
 
+        const isObjClass = [...item.classList].some((cls) => /^obj\d+$/.test(cls));
+
+        // Animate rotation changes while drag starts/ends
+        if (isObjClass) {
+            item.style.transition = "transform 0.05s ease-in-out";
+            item.style.transform = "rotate(0deg)";
+        }
+
         const frameRect = frame.getBoundingClientRect();
         const itemRect = item.getBoundingClientRect();
 
@@ -28,6 +36,11 @@ items.forEach((item) => {
             item.removeEventListener("pointermove", onMove);
             item.removeEventListener("pointerup", onUp);
             item.removeEventListener("pointercancel", onUp);
+
+            // Animate back to CSS rotation
+            if (isObjClass) {
+                item.style.transform = "";
+            }
         };
 
         item.addEventListener("pointermove", onMove);

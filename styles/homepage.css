@@ -1,9 +1,8 @@
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 64px;
+    padding: 16px 64px 0 64px;
 }
 
 .header div h1, .header div h2 {
@@ -20,7 +19,7 @@
 }
 
 .frame {
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     border-radius: 12px;
     margin: 0px auto;
@@ -42,40 +41,43 @@
 .obj1 {
     left: 224px;
     top: 64px;
+    transform: rotate(3deg);
 }
 
 .obj2 {
     left: 404px;
     top: 369px;
+    transform: rotate(-3deg);
 }
 
 .obj3 {
     left: 728px;
     top: 0px;
+    transform: rotate(2deg);
 }
 
 .obj4 {
     left: 978px;
     top: 310px;
+    transform: rotate(-2deg);
 }
 
-.image-placeholder img {
+.image-placeholder .image {
     border: 20px solid #ffffff;
     box-sizing: border-box;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+    box-shadow: 3px 8px 14px rgba(0, 0, 0, 0.39);
     width: 350px;
     height: auto;
 }
 
 .tape {
     position: relative;
-    top: 28px;
+    top: 16px;
     left: 0;
     transform: none;
     display: block;
     margin: 0 auto;
     width: 24px;
-    height: 48px;
-    background: #3b82f6;
+    height: auto;
     z-index: 2;
 }
