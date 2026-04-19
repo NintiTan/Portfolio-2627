@@ -15,7 +15,6 @@
 
 .frame-text {
     position: absolute;
-    top: 425px;     /* adjust */
     left: 10px;    /* adjust */
     z-index: -1;
     pointer-events: none;
@@ -29,6 +28,7 @@
 
 .object {
     position: absolute;
+    width: 260px;         /* base size */
     cursor: grab;
     user-select: none;
     touch-action: none;
@@ -39,14 +39,13 @@
 }
 
 .image-placeholder .image {
+    width: 100%;          /* now follows .object resize */
+    height: auto;
+    display: block;
     border: 8px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 3px 8px 14px rgba(0, 0, 0, 0.39);
-    width: 250px;
-    height: auto;
 }
-
-
 
 .tape {
     position: relative;
@@ -56,7 +55,7 @@
     display: block;
     margin: 0 auto;
     width: auto;
-    height: 35px;
+    height: 30px;
     z-index: 2;
 }
 
