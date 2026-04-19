@@ -47,6 +47,46 @@
     transform: rotate(-1deg);
 }
 
+/* Collection02 */
+
+.obj9 {
+    left: 0px;
+    top: 600px;
+    transform: rotate(1deg);
+    width: 519px;
+}
+
+.obj10 {
+    left: 538px;
+    top: 600px;
+    transform: rotate(-1deg);
+}
+
+.obj11 {
+    left: 807px;
+    top: 600px;
+    transform: rotate(-1deg);
+}
+
+.obj12 {
+    left: 807px;
+    top: 797px;
+    transform: rotate(1deg);
+}
+
+.obj13 {
+    left: 538px;
+    top: 797px;
+    transform: rotate(-1deg);
+}
+
+.obj14 {
+    left: 1076px;
+    top: 600px;
+    transform: rotate(1deg);
+}
+
+
 p, h2 {
     font-family: "ReenieBeanie", cursive;
     font-size: 20px;
@@ -56,6 +96,11 @@ p, h2 {
     padding: 0;
 }
 
-.frame-text {
+.frame-wrap .frame-text:nth-child(1 of .frame-text) {
     top: 450px;
+}
+
+.frame-wrap .frame-text:nth-child(2 of .frame-text) {
+    top: 1020px;
+
 }

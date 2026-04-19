@@ -108,9 +108,15 @@ const createOverlay = (zIndex) => {
     expandedOverlay.style.position = "fixed";
     expandedOverlay.style.inset = "0";
     expandedOverlay.style.background = "rgba(0, 0, 0, 0.15)";
+    expandedOverlay.style.opacity = "0";
+    expandedOverlay.style.transition = "opacity 0.2s ease";
     expandedOverlay.style.zIndex = String(zIndex);
     expandedOverlay.style.pointerEvents = "auto";
     document.body.appendChild(expandedOverlay);
+
+    requestAnimationFrame(() => {
+        expandedOverlay.style.opacity = "1";
+    });
 
     expandedOverlay.addEventListener("pointerdown", (e) => {
         e.preventDefault();
@@ -139,7 +145,6 @@ const expandObj = (obj) => {
     savedObjStyle.set(obj, obj.getAttribute("style"));
 
     const objZ = topZ + 10000;
-    createOverlay(objZ - 1);
 
     obj.style.position = "fixed";
     obj.style.left = `${(window.innerWidth - newW) / 2}px`;
@@ -148,14 +153,15 @@ const expandObj = (obj) => {
     obj.style.height = `${newH}px`;
     obj.style.transform = "none";
     obj.style.zIndex = String(objZ);
-    obj.style.transition = "all 0.2s ease";
+    obj.style.transition = "all 0.4s ease";
 
     disableTapeForObj(obj);
     expandedObj = obj;
 
     setTimeout(() => {
+        createOverlay(objZ - 1);
         document.addEventListener("pointerdown", onOutsidePointerDown, true);
-    }, 0);
+    }, 350); // matches the transition time
 };
 
 const closeExpandedObj = () => {
