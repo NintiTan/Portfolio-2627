@@ -1,22 +1,4 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 64px 0 64px;
-}
 
-.header div h1, .header div h2 {
-    text-align: left;
-    margin: 0;
-}
-
-.header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
 
 .frame {
     height: 85vh;
@@ -39,26 +21,26 @@
 }
 
 .obj1 {
-    left: 224px;
-    top: 64px;
+    left: 216px;
+    top: 0px;
     transform: rotate(3deg);
 }
 
 .obj2 {
-    left: 404px;
-    top: 369px;
+    left: 60px;
+    top: 326px;
     transform: rotate(-3deg);
 }
 
 .obj3 {
-    left: 728px;
+    left: 738px;
     top: 0px;
     transform: rotate(2deg);
 }
 
 .obj4 {
     left: 978px;
-    top: 310px;
+    top: 345px;
     transform: rotate(-2deg);
 }
 
@@ -81,3 +63,38 @@
     height: auto;
     z-index: 2;
 }
+
+.drag-hint {
+    position: fixed;
+    left: 50%;
+    bottom: 48px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    z-index: -10;
+    color: #1f1f1f;
+    font-family: inherit;
+    text-transform: lowercase;
+    pointer-events: none;
+    padding: 16px;
+}
+
+
+.drag-hint-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    padding: 16px;
+}
+.drag-hint-rect {
+    width: 90px;
+    height: 65px;
+    border: 2px dotted currentColor;
+    border-radius: 2px;
+    background: transparent;
+    box-sizing: border-box;
+}
+
