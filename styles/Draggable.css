@@ -1,12 +1,30 @@
-
+.frame-wrap {
+    position: relative;
+    height: 85vh;
+    margin: 0 64px;
+    overflow: visible;
+}
 
 .frame {
-    height: 85vh;
-    width: 100%;
-    border-radius: 12px;
-    margin: 0px auto;
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    z-index: 1;
+}
+
+.frame-text {
+    position: absolute;
+    top: 425px;     /* adjust */
+    left: 10px;    /* adjust */
+    z-index: -1;
+    pointer-events: none;
+    width: 35%;
+}
+
+.frame-text p {
+    margin: 0;
+    pointer-events: none;
 }
 
 .object {
@@ -18,55 +36,6 @@
 
 .object:active {
     cursor: grabbing;
-}
-
-.obj1 {
-    left: 216px;
-    top: 0px;
-    transform: rotate(1deg);
-}
-
-.obj2 {
-    left: 60px;
-    top: 326px;
-    transform: rotate(-1deg);
-}
-
-.obj3 {
-    left: 738px;
-    top: 0px;
-    transform: rotate(2deg);
-}
-
-.obj4 {
-    left: 978px;
-    top: 345px;
-    transform: rotate(-2deg);
-}
-
-.obj5 {
-    left: 216px;
-    top: 326px;
-    transform: rotate(-1deg);
-}
-
-.obj6 {
-    left: 738px;
-    top: 326px;
-    transform: rotate(1deg);
-}
-
-.obj7 {
-    left: 216px;
-    top: 300px;
-    transform: rotate(2deg);
-
-}
-
-.obj8 {
-    left: 738px;
-    top: 652px;
-    transform: rotate(-2deg);
 }
 
 .image-placeholder .image {
@@ -81,13 +50,13 @@
 
 .tape {
     position: relative;
-    top: 12px;
+    top: 18px;
     left: 0;
     transform: none;
     display: block;
     margin: 0 auto;
-    width: 20px;
-    height: auto;
+    width: auto;
+    height: 35px;
     z-index: 2;
 }
 

@@ -1,15 +1,12 @@
 
 .contact-info {
-    min-height: 70vh;          /* full viewport height */
+    min-height: 60vh;          /* full viewport height */
     display: flex;
     justify-content: center;    /* horizontal */
     align-items: center;        /* vertical */
 }
 
 .contact-info ul {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -17,4 +14,13 @@
     margin: 0;
     padding: 0;
 }
+
+.contact-info ul li p, .contact-info ul li a {
+    font-family: "ReenieBeanie", cursive;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
 
