@@ -53,3 +53,12 @@ header nav ul {
     align-items: flex-end;
     margin: 0;
 }
+
+p {
+    font-family: "ReenieBeanie", cursive;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}

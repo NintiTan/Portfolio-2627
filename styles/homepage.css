@@ -1,0 +1,51 @@
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    flex-direction: row;
+}
+
+
+.little-me {
+    top: 50px;
+    width: 250px;  
+    height: auto;
+    display: block;
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+}
+
+
+.little-me .image {
+    width: 100%;
+}
+
+.tape {
+    position: relative;
+    top: 36px;
+    left: 0;
+    transform: none;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 48px;
+    z-index: 2;
+}
+
+.little-me {
+    z-index: 1;
+}
+
+.flexbox p {
+    position: absolute;
+    text-align: center;
+    top: 425px; /* underneath .little-me */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 0; /* behind .little-me */
+}
