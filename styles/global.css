@@ -4,14 +4,13 @@
 } 
 
 body {
-    background-color: rgb(252, 251, 249);
+    background-image: url(../images/achtergrond.jpg);
+    background-size: cover;
 }
-
-
 
 h1, h2 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     text-align: center;
     margin-top: 32px;
@@ -21,14 +20,14 @@ a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: #000000;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
 }
 
 a:hover {
     text-decoration: underline;
     color: #000000;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
 }
 
@@ -49,5 +48,5 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 }
