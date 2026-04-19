@@ -66,9 +66,15 @@ const createOverlay = (zIndex) => {
     overlay.style.position = "fixed";
     overlay.style.inset = "0";
     overlay.style.background = "rgba(0, 0, 0, 0.15)";
+    overlay.style.opacity = "0";
+    overlay.style.transition = "opacity 0.2s ease";
     overlay.style.zIndex = String(zIndex);
     overlay.style.pointerEvents = "auto";
     document.body.appendChild(overlay);
+
+    requestAnimationFrame(() => {
+        overlay.style.opacity = "1";
+    });
 
     overlay.addEventListener("pointerdown", (e) => {
         e.preventDefault();
@@ -97,7 +103,6 @@ const expandItem = (item) => {
     savedStyle.set(item, item.getAttribute("style"));
 
     const itemZ = topZ + 10000;
-    createOverlay(itemZ - 1);
 
     item.style.position = "fixed";
     item.style.left = `${(window.innerWidth - newW) / 2}px`;
@@ -106,13 +111,14 @@ const expandItem = (item) => {
     item.style.height = `${newH}px`;
     item.style.transform = "none";
     item.style.zIndex = String(itemZ);
-    item.style.transition = "all 0.2s ease";
+    item.style.transition = "all 0.4s ease";
 
     expandedItem = item;
 
     setTimeout(() => {
+        createOverlay(itemZ - 1);
         document.addEventListener("pointerdown", onOutsidePointerDown, true);
-    }, 0);
+    }, 350);
 };
 
 const closeExpandedItem = () => {
