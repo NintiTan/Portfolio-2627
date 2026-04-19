@@ -1,4 +1,4 @@
-const frame = document.getElementById("frame");
+const frame = document.getElementById("frame-wrap");
 const items = frame.querySelectorAll(".object");
 
 // Start from current highest z-index in the frame
