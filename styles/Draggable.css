@@ -1,0 +1,94 @@
+
+
+.frame {
+    height: 85vh;
+    width: 100%;
+    border-radius: 12px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.object {
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+}
+
+.object:active {
+    cursor: grabbing;
+}
+
+.obj1 {
+    left: 216px;
+    top: 0px;
+    transform: rotate(1deg);
+}
+
+.obj2 {
+    left: 60px;
+    top: 326px;
+    transform: rotate(-1deg);
+}
+
+.obj3 {
+    left: 738px;
+    top: 0px;
+    transform: rotate(2deg);
+}
+
+.obj4 {
+    left: 978px;
+    top: 345px;
+    transform: rotate(-2deg);
+}
+
+.obj5 {
+    left: 216px;
+    top: 326px;
+    transform: rotate(-1deg);
+}
+
+.obj6 {
+    left: 738px;
+    top: 326px;
+    transform: rotate(1deg);
+}
+
+.obj7 {
+    left: 216px;
+    top: 300px;
+    transform: rotate(2deg);
+
+}
+
+.obj8 {
+    left: 738px;
+    top: 652px;
+    transform: rotate(-2deg);
+}
+
+.image-placeholder .image {
+    border: 8px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 3px 8px 14px rgba(0, 0, 0, 0.39);
+    width: 250px;
+    height: auto;
+}
+
+
+
+.tape {
+    position: relative;
+    top: 12px;
+    left: 0;
+    transform: none;
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: auto;
+    z-index: 2;
+}
+
+
