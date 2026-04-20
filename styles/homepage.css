@@ -41,10 +41,14 @@
 }
 
 .little-me {
+    top: 90px;
+    left: 405px;
     transform: rotate(-2deg);
 }
 
 .big-me {
+    top: 90px;
+    left: 675px;
     transform: rotate(1deg);
 }
 
