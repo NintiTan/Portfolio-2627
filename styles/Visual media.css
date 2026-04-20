@@ -1,88 +1,88 @@
 .obj1 {
-    left: 60.40%;
-    top: 16.42%;
+    left: 807px;
+    top: 197px;
     transform: rotate(1deg);
 }
 
 .obj2 {
-    left: 60.40%;
-    top: 0%;
+    left: 807px;
+    top: 0px;
     transform: rotate(-1deg);
 }
 
 .obj3 {
-    left: 40.27%;
-    top: 0%;
+    left: 538px;
+    top: 0px;
     transform: rotate(1deg);
 }
 
 .obj4 {
-    left: 40.27%;
-    top: 16.42%;
+    left: 538px;
+    top: 197px;
     transform: rotate(-1deg);
 }
 
 .obj5 {
-    left: 0%;
-    top: 0%;
+    left: 0px;
+    top: 0px;
     transform: rotate(-1deg);
 }
 
 .obj6 {
-    left: 20.13%;
-    top: 0%;
+    left: 269px;
+    top: 0px;
     transform: rotate(1deg);
 }
 
 .obj7 {
-    left: 80.54%;
-    top: 0%;
+    left: 1076px;
+    top: 0px;
     transform: rotate(1deg);
 
 }
 
 .obj8 {
-    left: 80.54%;
-    top: 16.42%;
+    left: 1076px;
+    top: 197px;
     transform: rotate(-1deg);
 }
 
 /* Collection02 */
 
 .obj9 {
-    left: 0%;
-    top: 50%;
+    left: 0px;
+    top: 600px;
     transform: rotate(1deg);
-    width: clamp(320px, 38.85%, 600px);
+    width: 519px;
 }
 
 .obj10 {
-    left: 40.27%;
-    top: 50%;
+    left: 538px;
+    top: 600px;
     transform: rotate(-1deg);
 }
 
 .obj11 {
-    left: 60.40%;
-    top: 50%;
+    left: 807px;
+    top: 600px;
     transform: rotate(-1deg);
 }
 
 .obj12 {
-    left: 60.40%;
-    top: 66.42%;
+    left: 807px;
+    top: 797px;
     transform: rotate(1deg);
 }
 
 .obj13 {
-    left: 40.27%;
-    top: 66.42%;
+    left: 538px;
+    top: 797px;
     transform: rotate(-1deg);
 }
 
 .obj14 {
-    left: 80.54%;
-    top: 50%;
+    left: 1076px;
+    top: 600px;
     transform: rotate(1deg);
 }
 
@@ -97,10 +97,10 @@ p, h2 {
 }
 
 .frame-wrap .frame-text:nth-child(1 of .frame-text) {
-    top: 37.5%;
+    top: 450px;
 }
 
 .frame-wrap .frame-text:nth-child(2 of .frame-text) {
-    top: 85%;
+    top: 1020px;
 
 }
