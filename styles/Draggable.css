@@ -3,6 +3,7 @@
     --layout-width: 1336;
     --layout-height: 1200;
     width: min(100%, 1400px);
+    min-height: clamp(980px, calc((var(--layout-height) / var(--layout-width)) * (100vw - 128px)), 1450px);
     margin: 0 64px;
     margin-left: auto;
     margin-right: auto;
