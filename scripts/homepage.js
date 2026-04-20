@@ -1,4 +1,4 @@
-const items = document.querySelectorAll(".object, .little-me");
+const items = document.querySelectorAll(".object, .little-me, .big-me");
 
 // Start from current highest z-index in the page
 let topZ = Math.max(
