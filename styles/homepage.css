@@ -1,26 +1,25 @@
-.flexbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.frame-wrap {
     position: relative;
-    height: 100vh;
-    flex-direction: row;
+    height: 200vh;
+    margin: 0 64px;
+    overflow: visible;
 }
 
-
-.little-me {
-    top: 50px;
-    width: 250px;  
+.little-me,
+.big-me {
+    position: absolute;
+    top: auto;
+    width: 250px;
     height: auto;
     display: block;
-    position: absolute;
     cursor: grab;
     user-select: none;
     touch-action: none;
+    z-index: 1;
 }
 
 
-.little-me .image {
+.little-me .image, .big-me .image {
     width: 100%;
     display: block;
     border: 8px solid #ffffff;
@@ -28,7 +27,6 @@
     box-shadow: 3px 8px 14px rgba(0, 0, 0, 0.39);
     background-color: #ffffff;
 }
-
 
 .tape {
     position: relative;
@@ -43,15 +41,25 @@
 }
 
 .little-me {
-    z-index: 1;
+    transform: rotate(-2deg);
 }
 
-.flexbox p {
-    position: absolute;
-    text-align: center;
-    top: 425px; /* underneath .little-me */
-    left: 50%;
-    transform: translateX(-50%);
+.big-me {
+    transform: rotate(1deg);
+}
+
+.welcome {
+    min-height: 110vh;          /* full viewport height */
+    display: flex;
+    justify-content: center;    /* horizontal */
+    align-items: center;   
+}
+
+.welcome p {
+    font-family: "ReenieBeanie", cursive;
+    font-weight: 300;
+    font-size: 20px;
     margin: 0;
-    z-index: 0; /* behind .little-me */
+    padding: 0;
+    text-align: center;
 }
