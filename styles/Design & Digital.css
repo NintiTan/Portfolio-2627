@@ -1,0 +1,78 @@
+
+.obj3, .obj4, .obj5, .obj6 {
+    width: 125px;
+    height: auto;
+}
+
+.obj1, .obj2, .obj7, .obj8 {
+    width: 375px;
+    height: auto;
+}
+
+.obj1 {
+    top: 0px;
+    left: 950px;
+    transform: rotate(1deg);
+}
+
+.obj2 {
+    top: 275px;
+    left: 950px;
+    transform: rotate(-1deg);
+}
+
+.obj3 {
+    top: 550px;
+    left: 560px;
+    transform: rotate(1deg);
+}
+
+.obj4 {
+    top: 550px;
+    left: 700px;
+    transform: rotate(-1deg);
+}
+
+.obj5 {
+    top: 550px;
+    left: 840px;
+    transform: rotate(2deg);
+}
+
+
+.obj6 {
+    top: 550px;
+    left: 980px;
+    transform: rotate(-1deg);
+}
+
+.obj7 {
+    top: 275px;
+    left: 560px;
+    transform: rotate(-2deg);
+
+}
+
+.obj8 {
+    top: 0px;
+    left: 560px;
+    transform: rotate(-1deg);
+
+}
+
+
+
+
+
+p, h2 {
+    font-family: "ReenieBeanie", cursive;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.frame-wrap .frame-text:nth-child(1 of .frame-text) {
+    top: 25px;
+}
