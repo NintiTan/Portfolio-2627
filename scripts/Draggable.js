@@ -36,8 +36,11 @@ items.forEach((item) => {
             x = Math.max(0, Math.min(x, frame.clientWidth - item.offsetWidth));
             y = Math.max(0, Math.min(y, frame.clientHeight - item.offsetHeight));
 
-            item.style.left = `${x}px`;
-            item.style.top = `${y}px`;
+            const xPercent = (x / frame.clientWidth) * 100;
+            const yPercent = (y / frame.clientHeight) * 100;
+
+            item.style.left = `${xPercent}%`;
+            item.style.top = `${yPercent}%`;
         };
 
         const onUp = (ev) => {
