@@ -1,7 +1,7 @@
 .frame-wrap {
     position: relative;
     height: 200vh;
-    margin: 0 64px;
+    margin: 0 4em;
     overflow: visible;
 }
 
@@ -15,7 +15,7 @@
 
 .frame-text {
     position: absolute;
-    left: 10px;    /* adjust */
+    left: 0.625em;    /* adjust */
     z-index: -1;
     pointer-events: none;
     width: 35%;
@@ -28,7 +28,7 @@
 
 .object {
     position: absolute;
-    width: 260px;         /* base size */
+    width: 16.25em;         /* base size */
     cursor: grab;
     user-select: none;
     touch-action: none;
@@ -42,20 +42,20 @@
     width: 100%;          /* now follows .object resize */
     height: auto;
     display: block;
-    border: 8px solid #ffffff;
+    border: 0.5em solid #ffffff;
     box-sizing: border-box;
-    box-shadow: 3px 8px 14px rgba(0, 0, 0, 0.39);
+    box-shadow: 0.1875em 0.5em 0.875em rgba(0, 0, 0, 0.39);
 }
 
 .tape {
     position: relative;
-    top: 18px;
+    top: 1.125em;
     left: 0;
     transform: none;
     display: block;
     margin: 0 auto;
     width: auto;
-    height: 30px;
+    height: 1.875em;
     z-index: 2;
 }
 

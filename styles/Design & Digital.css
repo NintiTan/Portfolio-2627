@@ -1,61 +1,60 @@
 
 .obj3, .obj4, .obj5, .obj6 {
-    width: 125px;
+    width: 7.8125em;
     height: auto;
 }
 
 .obj1, .obj2, .obj7, .obj8 {
-    width: 375px;
+    width: 23.4375em;
     height: auto;
 }
 
 .obj1 {
     top: 0px;
-    left: 950px;
+    left: 59.375em;
     transform: rotate(1deg);
 }
 
 .obj2 {
-    top: 275px;
-    left: 950px;
+    top: 17.1875em;
+    left: 59.375em;
     transform: rotate(-1deg);
 }
 
 .obj3 {
-    top: 550px;
-    left: 560px;
+    top: 34.375em;
+    left: 35em;
     transform: rotate(1deg);
 }
 
 .obj4 {
-    top: 550px;
-    left: 700px;
+    top: 34.375em;
+    left: 43.75em;
     transform: rotate(-1deg);
 }
 
 .obj5 {
-    top: 550px;
-    left: 840px;
+    top: 34.375em;
+    left: 52.5em;
     transform: rotate(2deg);
 }
 
 
 .obj6 {
-    top: 550px;
-    left: 980px;
+    top: 34.375em;
+    left: 61.25em;
     transform: rotate(-1deg);
 }
 
 .obj7 {
-    top: 275px;
-    left: 560px;
+    top: 17.1875em;
+    left: 35em;
     transform: rotate(-2deg);
-
 }
 
 .obj8 {
     top: 0px;
-    left: 560px;
+    left: 35em;
     transform: rotate(-1deg);
 
 }
@@ -66,7 +65,7 @@
 
 p, h2 {
     font-family: "ReenieBeanie", cursive;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 100;
     text-align: left;
     margin: 0;
@@ -74,5 +73,5 @@ p, h2 {
 }
 
 .frame-wrap .frame-text:nth-child(1 of .frame-text) {
-    top: 25px;
+    top: 1.25em;
 }

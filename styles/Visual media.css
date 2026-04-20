@@ -1,95 +1,95 @@
 .obj1 {
-    left: 807px;
-    top: 197px;
+    left: 50.4375em;
+    top: 12.25em;
     transform: rotate(1deg);
 }
 
 .obj2 {
-    left: 807px;
-    top: 0px;
+    left: 50.4375em;
+    top: 0em;
     transform: rotate(-1deg);
 }
 
 .obj3 {
-    left: 538px;
-    top: 0px;
+    left: 33.625em;
+    top: 0em;
     transform: rotate(1deg);
 }
 
 .obj4 {
-    left: 538px;
-    top: 197px;
+    left: 33.625em;
+    top: 12.25em;
     transform: rotate(-1deg);
 }
 
 .obj5 {
-    left: 0px;
-    top: 0px;
+    left: 0em;
+    top: 0em;
     transform: rotate(-1deg);
 }
 
 .obj6 {
-    left: 269px;
-    top: 0px;
+    left: 16.8125em;
+    top: 0em;
     transform: rotate(1deg);
 }
 
 .obj7 {
-    left: 1076px;
-    top: 0px;
+    left: 67.25em;
+    top: 0em;
     transform: rotate(1deg);
 
 }
 
 .obj8 {
-    left: 1076px;
-    top: 197px;
+    left: 67.25em;
+    top: 12.25em;
     transform: rotate(-1deg);
 }
 
 /* Collection02 */
 
 .obj9 {
-    left: 0px;
-    top: 600px;
+    left: 0em;
+    top: 37.5em;
     transform: rotate(1deg);
-    width: 519px;
+    width: 32.4375em;
 }
 
 .obj10 {
-    left: 538px;
-    top: 600px;
+    left: 33.625em;
+    top: 37.5em;
     transform: rotate(-1deg);
 }
 
 .obj11 {
-    left: 807px;
-    top: 600px;
+    left: 50.4375em;
+    top: 37.5em;
     transform: rotate(-1deg);
 }
 
 .obj12 {
-    left: 807px;
-    top: 797px;
+    left: 50.4375em;
+    top: 49.5em;
     transform: rotate(1deg);
 }
 
 .obj13 {
-    left: 538px;
-    top: 797px;
+    left: 33.625em;
+    top: 49.5em;
     transform: rotate(-1deg);
 }
 
 .obj14 {
-    left: 1076px;
-    top: 600px;
+    left: 67.25em;
+    top: 49.5em;
     transform: rotate(1deg);
 }
 
 
 p, h2 {
     font-family: "ReenieBeanie", cursive;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 100;
     text-align: left;
     margin: 0;
@@ -97,10 +97,9 @@ p, h2 {
 }
 
 .frame-wrap .frame-text:nth-child(1 of .frame-text) {
-    top: 450px;
+    top: 28.125em;
 }
 
 .frame-wrap .frame-text:nth-child(2 of .frame-text) {
-    top: 1020px;
-
+    top: 63.75em;
 }

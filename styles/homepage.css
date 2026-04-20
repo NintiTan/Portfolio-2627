@@ -1,7 +1,7 @@
 .frame-wrap {
     position: relative;
-    height: 200vh;
-    margin: 0 64px;
+    height: 100vh;
+    margin: 0 4em;
     overflow: visible;
 }
 
@@ -9,7 +9,7 @@
 .big-me {
     position: absolute;
     top: auto;
-    width: 250px;
+    width: 15.625em;
     height: auto;
     display: block;
     cursor: grab;
@@ -22,33 +22,33 @@
 .little-me .image, .big-me .image {
     width: 100%;
     display: block;
-    border: 8px solid #ffffff;
+    border: 0.5em solid #ffffff;
     box-sizing: border-box;
-    box-shadow: 3px 8px 14px rgba(0, 0, 0, 0.39);
+    box-shadow: 0.1875em 0.5em 0.875em rgba(0, 0, 0, 0.39);
     background-color: #ffffff;
 }
 
 .tape {
     position: relative;
-    top: 14px;
+    top: 0.875em;
     left: 0;
     transform: none;
     display: block;
     margin: 0 auto;
     width: auto;
-    height: 30px;
+    height: 1.875em;
     z-index: 2;
 }
 
 .little-me {
-    top: 90px;
-    left: 405px;
+    top: 5.625em;
+    left: 25.3125em;
     transform: rotate(-2deg);
 }
 
 .big-me {
-    top: 90px;
-    left: 675px;
+    top: 5.625em;
+    left: 42.1875em;
     transform: rotate(1deg);
 }
 
@@ -62,7 +62,7 @@
 .welcome p {
     font-family: "ReenieBeanie", cursive;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25em;
     margin: 0;
     padding: 0;
     text-align: center;
