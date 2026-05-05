@@ -11,26 +11,26 @@ body {
 }
 
 header > div h1, header > div h2 {
-    font-family: "ReenieBeanie", cursive;
+    font-family: "montserrat", sans-serif;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
     margin-top: 2em;
 }
 
 a {
-    font-family: "ReenieBeanie", cursive;
+    font-family: "montserrat", sans-serif;
     text-decoration: none;
     color: #000000;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 a:hover {
     text-decoration: underline;
     color: #000000;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 header {
@@ -55,7 +55,7 @@ header nav ul {
 }
 
 p {
-    font-family: "ReenieBeanie", cursive;
+    font-family: "montserrat", sans-serif;
     font-size: 1.25em;
     font-weight: 100;
     text-align: left;
