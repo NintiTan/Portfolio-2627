@@ -30,49 +30,49 @@
 
     .obj1 {
         top: 0%;
-        left: 65%;
+        left: 59%;
         transform: rotate(1deg);
     }
 
     .obj2 {
-        top: 18%;
-        left: 65%;
+        top: 17.1875%;
+        left: 59%;
         transform: rotate(-1deg);
     }
 
     .obj3 {
-        top: 36%;
-        left: 40%;
+        top: 34.375%;
+        left: 35%;
         transform: rotate(1deg);
     }
 
     .obj4 {
-        top: 36%;
-        left: 50%;
+        top: 34.375%;
+        left: 43.75%;
         transform: rotate(-1deg);
     }
 
     .obj5 {
-        top: 36%;
-        left: 60%;
+        top: 34.375%;
+        left: 52.5%;
         transform: rotate(2deg);
     }
 
     .obj6 {
-        top: 36%;
-        left: 70%;
+        top: 34.375%;
+        left: 61.25%;
         transform: rotate(-1deg);
     }
 
     .obj7 {
-        top: 18%;
-        left: 40%;
+        top: 17.1875%;
+        left: 35%;
         transform: rotate(-2deg);
     }
 
     .obj8 {
         top: 0%;
-        left: 40%;
+        left: 35%;
         transform: rotate(-1deg);
     }
 
