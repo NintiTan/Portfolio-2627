@@ -1,7 +1,7 @@
 .frame-wrap {
     position: relative;
     height: 100vh;
-    margin: 0 4em;
+    margin: 0 4.44vw;
     overflow: visible;
 }
 
@@ -9,7 +9,7 @@
 .big-me {
     position: absolute;
     top: auto;
-    width: 15.625em;
+    width: 17.34vw;
     height: auto;
     display: block;
     cursor: grab;
@@ -22,33 +22,33 @@
 .little-me .image, .big-me .image {
     width: 100%;
     display: block;
-    border: 0.5em solid #ffffff;
+    border: 0.56vw solid #ffffff;
     box-sizing: border-box;
-    box-shadow: 0.1875em 0.5em 0.875em rgba(0, 0, 0, 0.39);
+    box-shadow: 0.21vw 0.56vw 0.97vw rgba(0, 0, 0, 0.39);
     background-color: #ffffff;
 }
 
 .tape {
     position: relative;
-    top: 0.875em;
+    top: 0.97vw;
     left: 0;
     transform: none;
     display: block;
     margin: 0 auto;
     width: auto;
-    height: 1.875em;
+    height: 2.08vw;
     z-index: 2;
 }
 
 .little-me {
-    top: 5.625em;
-    left: 25.3125em;
+    top: 6.24vw;
+    left: 28.10vw;
     transform: rotate(-2deg);
 }
 
 .big-me {
-    top: 5.625em;
-    left: 42.1875em;
+    top: 6.24vw;
+    left: 46.85vw;
     transform: rotate(1deg);
 }
 
@@ -62,7 +62,7 @@
 .welcome p {
     font-family: "montserrat", sans-serif;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.11vw;
     margin: 0;
     padding: 0;
     text-align: center;
