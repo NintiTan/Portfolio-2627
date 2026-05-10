@@ -13,9 +13,9 @@ body {
 header > div h1, header > div h2 {
     font-family: "montserrat", sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
+    font-size: 1.3875vw;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 2.22vw;
 }
 
 a {
@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 4em 2.25em 4em;
+    padding: 1.11vw 4.44vw 2.50vw 4.44vw;
 }
 
 header div h1, header div h2 {
