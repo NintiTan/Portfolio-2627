@@ -1,129 +1,77 @@
 
 .obj3, .obj4, .obj5, .obj6 {
-    .frame-wrap {
-        position: relative;
-        width: min(1200px, 92vw);
-        margin: 2rem auto;
-        padding: 2rem 0;
-        min-height: 60vh;
-    }
+    width: 7.8125em;
+    height: auto;
+}
 
-    .collection-01 {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+.obj1, .obj2, .obj7, .obj8 {
+    width: 23.4375em;
+    height: auto;
+}
 
-    .object {
-        position: absolute;
-        user-select: none;
-        -webkit-user-drag: none;
-    }
+.obj1 {
+    top: 0px;
+    left: 59.375em;
+    transform: rotate(1deg);
+}
 
-    .obj3, .obj4, .obj5, .obj6 {
-        width: clamp(90px, 8vw, 160px);
-    }
+.obj2 {
+    top: 17.1875em;
+    left: 59.375em;
+    transform: rotate(-1deg);
+}
 
-    .obj1, .obj2, .obj7, .obj8 {
-        width: clamp(180px, 18vw, 420px);
-    }
+.obj3 {
+    top: 34.375em;
+    left: 35em;
+    transform: rotate(1deg);
+}
 
-    .obj1 {
-        top: 0%;
-        left: 59%;
-        transform: rotate(1deg);
-    }
+.obj4 {
+    top: 34.375em;
+    left: 43.75em;
+    transform: rotate(-1deg);
+}
 
-    .obj2 {
-        top: 17.1875%;
-        left: 59%;
-        transform: rotate(-1deg);
-    }
+.obj5 {
+    top: 34.375em;
+    left: 52.5em;
+    transform: rotate(2deg);
+}
 
-    .obj3 {
-        top: 34.375%;
-        left: 35%;
-        transform: rotate(1deg);
-    }
 
-    .obj4 {
-        top: 34.375%;
-        left: 43.75%;
-        transform: rotate(-1deg);
-    }
+.obj6 {
+    top: 34.375em;
+    left: 61.25em;
+    transform: rotate(-1deg);
+}
 
-    .obj5 {
-        top: 34.375%;
-        left: 52.5%;
-        transform: rotate(2deg);
-    }
+.obj7 {
+    top: 17.1875em;
+    left: 35em;
+    transform: rotate(-2deg);
+}
 
-    .obj6 {
-        top: 34.375%;
-        left: 61.25%;
-        transform: rotate(-1deg);
-    }
+.obj8 {
+    top: 0px;
+    left: 35em;
+    transform: rotate(-1deg);
 
-    .obj7 {
-        top: 17.1875%;
-        left: 35%;
-        transform: rotate(-2deg);
-    }
+}
 
-    .obj8 {
-        top: 0%;
-        left: 35%;
-        transform: rotate(-1deg);
-    }
 
-    .object img.image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
 
-    .object img.tape {
-        position: absolute;
-        width: 35%;
-        top: -0.6rem;
-        left: 0;
-        pointer-events: none;
-    }
 
-    .frame-text {
-        position: absolute;
-        left: 4%;
-        top: 8%;
-        width: 30%;
-        font-family: "montserrat", sans-serif;
-        color: #000;
-    }
 
-    .frame-text h2 { margin:0 0 0.5rem 0; font-size: clamp(18px, 2.2vw, 28px); font-weight: 600; }
-    .frame-text p { margin:0; font-size: clamp(14px,1.2vw,16px); line-height:1.6; font-weight:100; }
+p, h2 {
+    font-family: "montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
 
-    p, h2 {
-        font-family: "montserrat", sans-serif;
-        font-size: 1em;
-        font-weight: 100;
-        text-align: left;
-        margin: 0;
-        padding: 0;
-    }
-
-    @media (max-width: 1000px) {
-        .frame-wrap { width: 96vw; min-height: auto; }
-        .frame-text { position: absolute; left: 4%; top: 6%; width: 40%; }
-        .obj1, .obj2, .obj7, .obj8 { left: 60%; }
-        .obj3, .obj4, .obj5, .obj6 { left: 42%; }
-    }
-
-    @media (max-width: 800px) {
-        .frame-wrap { display:block; padding:1rem; }
-        .collection-01 { position: static; display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
-        .object { position: static; width: 45%; transform:none; }
-        .object img.tape { position: relative; width: 24%; top:0; left:0; display:block; margin:0 auto; }
-        .frame-text { position: static; width: 100%; padding: 1rem 0; }
-        .frame-text h2 { text-align:center; }
-    }
+.frame-wrap .frame-text:nth-child(1 of .frame-text) {
+    top: 1.25em;
 }
