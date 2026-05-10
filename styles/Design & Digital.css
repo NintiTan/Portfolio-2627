@@ -1,71 +1,68 @@
 
 .obj3, .obj4, .obj5, .obj6 {
-    width: 7.8125em;
+    width: 8.68vw;
     height: auto;
 }
 
 .obj1, .obj2, .obj7, .obj8 {
-    width: 23.4375em;
+    width: 26.04vw;
     height: auto;
 }
 
 .obj1 {
     top: 0px;
-    left: 59.375em;
+    left: 65.97vw;
     transform: rotate(1deg);
 }
 
 .obj2 {
-    top: 17.1875em;
-    left: 59.375em;
+    top: 19.1vw;
+    left: 65.97vw;
     transform: rotate(-1deg);
 }
 
 .obj3 {
-    top: 34.375em;
-    left: 35em;
+    top: 38.19vw;
+    left: 38.89vw;
     transform: rotate(1deg);
 }
 
 .obj4 {
-    top: 34.375em;
-    left: 43.75em;
+    top: 38.19vw;
+    left: 48.61vw;
     transform: rotate(-1deg);
 }
 
 .obj5 {
-    top: 34.375em;
-    left: 52.5em;
+    top: 38.19vw;
+    left: 58.33vw;
     transform: rotate(2deg);
 }
 
 
 .obj6 {
-    top: 34.375em;
-    left: 61.25em;
+    top: 38.19vw;
+    left: 68.06vw;
     transform: rotate(-1deg);
 }
 
 .obj7 {
-    top: 17.1875em;
-    left: 35em;
+    top: 19.1vw;
+    left: 38.89vw;
     transform: rotate(-2deg);
 }
 
 .obj8 {
     top: 0px;
-    left: 35em;
+    left: 38.89vw;
     transform: rotate(-1deg);
 
 }
 
 
-
-
-
 p, h2 {
     font-family: "montserrat", sans-serif;
-    font-size: 1em;
+    font-size: 1.11vw;
     font-weight: 100;
     text-align: left;
     margin: 0;
@@ -73,5 +70,5 @@ p, h2 {
 }
 
 .frame-wrap .frame-text:nth-child(1 of .frame-text) {
-    top: 1.25em;
+    top: 1.39vw;
 }
