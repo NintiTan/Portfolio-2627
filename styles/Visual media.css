@@ -1,3 +1,6 @@
+
+/*Collection 01*/
+
 .obj1 {
     left: 55.99vw;
     top: 13.60vw;
@@ -86,11 +89,17 @@
     transform: rotate(1deg);
 }
 
+.obj15 {
+    left: 0vw;
+    top: 77.32vw;
+    transform: rotate(-1deg);
+    width: 35.97vw;
+}
 
 p, h2 {
     font-family: "montserrat", sans-serif;
     font-size: 1.11vw;
-    font-weight: 100;
+    font-weight: 300;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -102,4 +111,9 @@ p, h2 {
 
 .frame-wrap .frame-text:nth-child(2 of .frame-text) {
     top: 70.76vw;
+}
+
+.frame-wrap .frame-text:nth-child(3 of .frame-text) {
+    left: 40.32vw;
+    top: 96.45vw;
 }

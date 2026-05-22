@@ -38,7 +38,7 @@
     cursor: grabbing;
 }
 
-.image-placeholder .image {
+.image-placeholder .image, .video-placeholder video {
     width: 100%;          /* now follows .object resize */
     height: auto;
     display: block;
