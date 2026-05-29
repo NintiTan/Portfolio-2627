@@ -7,7 +7,7 @@
 
 body {
     background-image: url('../images/achtergrond.JPG');
-    background-size: cover;
+    background-size: 100% auto;
 }
 
 header > div h1, header > div h2 {

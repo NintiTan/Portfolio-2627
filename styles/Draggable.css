@@ -81,15 +81,15 @@
 
 .postit p {
     position: absolute;
-    /* top right bottom left */
-    inset: 3vw 0.8vw 0.4vw 0.8vw;
+    inset: 3.35vw 0.8vw 0.4vw 0.8vw;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     text-align: center;
     z-index: 1;
     pointer-events: none;
     font-size: 0.9vw;
     box-sizing: border-box;
+    mix-blend-mode: multiply;
 }
 

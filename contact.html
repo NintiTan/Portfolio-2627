@@ -6,6 +6,7 @@
     <title>About</title>
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/Draggable.css" />
 </head>
 <body>
     <header>
@@ -23,13 +24,21 @@
         </nav>     
     </header>
 
-    <div class="contact-info">
-        <ul>
-            <li><p>Nintitan2005@gmail.com</p></li>
-            <li><a href="https://www.linkedin.com/in/ninti-tan-366999281/?skipRedirect=true">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/ninti_tan/">Instagram</a></li>
-        </ul>
+    <div class="frame-wrap" id="frame-wrap">
+        <div class="contact-info">
+            <ul>
+                <li><p>Nintitan2005@gmail.com</p></li>
+                <li><a href="https://www.linkedin.com/in/ninti-tan-366999281/?skipRedirect=true">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/ninti_tan/">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="postit post1">
+            <img src="images/Postit01.png" alt="Post-it note" draggable="false">
+            <p>Did you know: I coded this website from scratch?</p>
+        </div>
     </div>
 
+
+    <script src="scripts/Draggable.js"></script>
 </body>
 </html>

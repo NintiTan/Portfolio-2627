@@ -54,44 +54,44 @@
 
 .obj9 {
     left: 0vw;
-    top: 41.63vw;
+    top: 36.63vw;
     transform: rotate(1deg);
     width: 35.97vw;
 }
 
 .obj10 {
     left: 37.32vw;
-    top: 41.63vw;
+    top: 36.63vw;
     transform: rotate(-1deg);
 }
 
 .obj11 {
     left: 55.99vw;
-    top: 41.63vw;
+    top: 36.63vw;
     transform: rotate(-1deg);
 }
 
 .obj12 {
     left: 55.99vw;
-    top: 54.95vw;
+    top: 49.95vw;
     transform: rotate(1deg);
 }
 
 .obj13 {
     left: 37.32vw;
-    top: 54.95vw;
+    top: 49.95vw;
     transform: rotate(-1deg);
 }
 
 .obj14 {
     left: 74.64vw;
-    top: 54.95vw;
+    top: 49.95vw;
     transform: rotate(1deg);
 }
 
 .obj15 {
     left: 0vw;
-    top: 77.32vw;
+    top: 72.32vw;
     transform: rotate(-1deg);
     width: 35.97vw;
 }
@@ -110,12 +110,12 @@ p, h2 {
 }
 
 .frame-wrap .frame-text:nth-child(2 of .frame-text) {
-    top: 70.76vw;
+    top: 65.76vw;
 }
 
 .frame-wrap .frame-text:nth-child(3 of .frame-text) {
     left: 40.32vw;
-    top: 96.45vw;
+    top: 91.45vw;
 }
 
 .post1 {
@@ -125,13 +125,13 @@ p, h2 {
 }
 
 .post2 {
-    top: 44vw;
+    top: 39vw;
     left: 76vw;
     transform: rotate(-3deg);
 }
 
 .post3 {
-    top: 80.32vw;
+    top: 75.32vw;
     left: 39.32vw;
     transform: rotate(3deg);
 }
