@@ -41,14 +41,14 @@
 }
 
 .obj1 {
-    top: 4.24vw;
-    left: 28.10vw;
+    top: 2vw;
+    left: 15vw;
     transform: rotate(-2deg);
 }
 
 .obj2 {
-    top: 4.24vw;
-    left: 46.85vw;
+    top: 10vw;
+    left: 37vw;
     transform: rotate(1deg);
 }
 
@@ -61,7 +61,7 @@
 
 
 .post1 {
-    top: 24vw;
-    left: 41vw;
+    top: 9vw;
+    left: 60vw;
     transform: rotate(3deg);
 }
