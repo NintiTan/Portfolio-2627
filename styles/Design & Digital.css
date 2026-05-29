@@ -72,3 +72,9 @@ p, h2 {
 .frame-wrap .frame-text:nth-child(1 of .frame-text) {
     top: 1.39vw;
 }
+
+.post1 {
+    top: 19.1vw;
+    left: 58.33vw;
+    transform: rotate(3deg);
+}

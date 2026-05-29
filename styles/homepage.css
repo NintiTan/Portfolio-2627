@@ -40,14 +40,14 @@
     z-index: 2;
 }
 
-.little-me {
-    top: 6.24vw;
+.obj1 {
+    top: 4.24vw;
     left: 28.10vw;
     transform: rotate(-2deg);
 }
 
-.big-me {
-    top: 6.24vw;
+.obj2 {
+    top: 4.24vw;
     left: 46.85vw;
     transform: rotate(1deg);
 }
@@ -59,11 +59,9 @@
     align-items: center;   
 }
 
-.welcome p {
-    font-family: "montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 1.11vw;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+
+.post1 {
+    top: 24vw;
+    left: 41vw;
+    transform: rotate(3deg);
 }

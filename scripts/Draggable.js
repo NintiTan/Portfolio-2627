@@ -1,5 +1,5 @@
 const frame = document.getElementById("frame-wrap");
-const items = frame.querySelectorAll(".object");
+const items = frame.querySelectorAll(".object, .postit");
 
 // Start from current highest z-index in the frame
 let topZ = Math.max(
@@ -16,9 +16,10 @@ items.forEach((item) => {
         item.style.zIndex = String(++topZ);
 
         const isObjClass = [...item.classList].some((cls) => /^obj\d+$/.test(cls));
+        const isPostClass = [...item.classList].some((cls) => /^post\d+$/.test(cls));
 
         // Animate rotation changes while drag starts/ends
-        if (isObjClass) {
+        if (isObjClass || isPostClass) {
             item.style.transition = "transform 0.05s ease-in-out";
             item.style.transform = "rotate(0deg)";
         }
@@ -47,7 +48,7 @@ items.forEach((item) => {
             item.removeEventListener("pointercancel", onUp);
 
             // Animate back to CSS rotation
-            if (isObjClass) {
+            if (isObjClass || isPostClass) {
                 item.style.transform = "";
             }
         };
@@ -224,3 +225,4 @@ objItems.forEach((obj) => {
         pressStart.delete(obj);
     });
 });
+

@@ -1,4 +1,4 @@
-const items = document.querySelectorAll(".object, .little-me, .big-me");
+const items = document.querySelectorAll(".object, .little-me, .big-me, .postit");
 
 // Start from current highest z-index in the page
 let topZ = Math.max(
@@ -6,60 +6,12 @@ let topZ = Math.max(
     ...[...items].map((el) => parseInt(getComputedStyle(el).zIndex, 10) || 0)
 );
 
-items.forEach((item) => {
-    item.addEventListener("pointerdown", (e) => {
-        e.preventDefault();
-        item.setPointerCapture(e.pointerId);
-
-        item.style.zIndex = String(++topZ);
-
-        const isObjClass = [...item.classList].some((cls) => /^obj\d+$/.test(cls));
-
-        if (isObjClass) {
-            item.style.transition = "transform 0.05s ease-in-out";
-            item.style.transform = "rotate(0deg)";
-        }
-
-        const container = item.closest(".frame-wrap, .flexbox") || document.body;
-        const containerRect = container.getBoundingClientRect();
-        const itemRect = item.getBoundingClientRect();
-
-        const offsetX = e.clientX - itemRect.left;
-        const offsetY = e.clientY - itemRect.top;
-
-        const onMove = (ev) => {
-            let x = ev.clientX - containerRect.left - offsetX;
-            let y = ev.clientY - containerRect.top - offsetY;
-
-            x = Math.max(0, Math.min(x, container.clientWidth - item.offsetWidth));
-            y = Math.max(0, Math.min(y, container.clientHeight - item.offsetHeight));
-
-            item.style.left = `${x}px`;
-            item.style.top = `${y}px`;
-        };
-
-        const onUp = (ev) => {
-            item.releasePointerCapture(ev.pointerId);
-            item.removeEventListener("pointermove", onMove);
-            item.removeEventListener("pointerup", onUp);
-            item.removeEventListener("pointercancel", onUp);
-
-            if (isObjClass) {
-                item.style.transform = "";
-            }
-        };
-
-        item.addEventListener("pointermove", onMove);
-        item.addEventListener("pointerup", onUp);
-        item.addEventListener("pointercancel", onUp);
-    });
-});
-
 
 let expandedItem = null;
 let overlay = null;
 const savedStyle = new Map();
 const pressStart = new WeakMap();
+const dragOffset = new WeakMap();
 
 const createOverlay = (zIndex) => {
     overlay = document.createElement("div");
@@ -145,12 +97,20 @@ const onOutsidePointerDown = (e) => {
 };
 
 items.forEach((item) => {
+    const canExpand = item.classList.contains("little-me") || item.classList.contains("big-me");
+
     item.addEventListener("pointerdown", (e) => {
         if (expandedItem) return;
         pressStart.set(item, { x: e.clientX, y: e.clientY });
 
         item.setPointerCapture(e.pointerId);
         item.style.zIndex = String(++topZ);
+
+        const itemRect = item.getBoundingClientRect();
+        dragOffset.set(item, {
+            x: e.clientX - itemRect.left,
+            y: e.clientY - itemRect.top,
+        });
     });
 
     item.addEventListener("pointermove", (e) => {
@@ -158,13 +118,14 @@ items.forEach((item) => {
 
         const start = pressStart.get(item);
         if (!start) return;
+        const offset = dragOffset.get(item);
+        if (!offset) return;
 
-        const container = item.closest(".flexbox") || document.body;
+        const container = item.closest(".frame-wrap, .flexbox") || document.body;
         const containerRect = container.getBoundingClientRect();
-        const itemRect = item.getBoundingClientRect();
 
-        let x = e.clientX - containerRect.left - (e.clientX - itemRect.left);
-        let y = e.clientY - containerRect.top - (e.clientY - itemRect.top);
+        let x = e.clientX - containerRect.left - offset.x;
+        let y = e.clientY - containerRect.top - offset.y;
 
         x = Math.max(0, Math.min(x, container.clientWidth - item.offsetWidth));
         y = Math.max(0, Math.min(y, container.clientHeight - item.offsetHeight));
@@ -181,10 +142,11 @@ items.forEach((item) => {
 
         const moved = Math.hypot(e.clientX - start.x, e.clientY - start.y);
         pressStart.delete(item);
+        dragOffset.delete(item);
 
         item.releasePointerCapture(e.pointerId);
 
-        if (moved <= 4) {
+        if (canExpand && moved <= 4) {
             requestAnimationFrame(() => {
                 if (!expandedItem) expandItem(item);
             });
@@ -193,5 +155,6 @@ items.forEach((item) => {
 
     item.addEventListener("pointercancel", () => {
         pressStart.delete(item);
+        dragOffset.delete(item);
     });
 });

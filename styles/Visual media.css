@@ -117,3 +117,21 @@ p, h2 {
     left: 40.32vw;
     top: 96.45vw;
 }
+
+.post1 {
+    top: 10vw;
+    left: 50vw;
+    transform: rotate(3deg);
+}
+
+.post2 {
+    top: 44vw;
+    left: 76vw;
+    transform: rotate(-3deg);
+}
+
+.post3 {
+    top: 80.32vw;
+    left: 39.32vw;
+    transform: rotate(3deg);
+}
