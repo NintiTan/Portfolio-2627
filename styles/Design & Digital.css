@@ -1,63 +1,81 @@
 
-.obj3, .obj4, .obj5, .obj6 {
-    width: 8.68vw;
-    height: auto;
-}
-
-.obj1, .obj2, .obj7, .obj8 {
-    width: 26.04vw;
-    height: auto;
-}
-
 .obj1 {
-    top: 0px;
-    left: 65.97vw;
-    transform: rotate(1deg);
+    width: 55.2vw;
+    left: 34.3vw;
 }
 
 .obj2 {
-    top: 19.1vw;
-    left: 65.97vw;
-    transform: rotate(-1deg);
-}
-
-.obj3 {
-    top: 38.19vw;
-    left: 38.89vw;
+    left: 34.32vw;
+    top: 32.60vw;
     transform: rotate(1deg);
 }
 
-.obj4 {
-    top: 38.19vw;
-    left: 48.61vw;
+.obj5 {
+    left: 34.32vw;
+    top: 45.90vw;
+    transform: rotate(1deg);
+}
+
+.obj3 {
+    left: 52.99vw;
+    top: 32.60vw;
     transform: rotate(-1deg);
 }
-
-.obj5 {
-    top: 38.19vw;
-    left: 58.33vw;
-    transform: rotate(2deg);
-}
-
 
 .obj6 {
-    top: 38.19vw;
-    left: 68.06vw;
+    left: 52.99vw;
+    top: 45.90vw;
     transform: rotate(-1deg);
+}
+
+.obj4 {
+    left: 71.64vw;
+    top: 32.60vw;
+    transform: rotate(1deg);
 }
 
 .obj7 {
-    top: 19.1vw;
-    left: 38.89vw;
-    transform: rotate(-2deg);
+    left: 71.64vw;
+    top: 45.90vw;
+    transform: rotate(-1deg);
 }
 
 .obj8 {
-    top: 0px;
-    left: 38.89vw;
-    transform: rotate(-1deg);
-
+    left: 34.3vw;
+    top: 73vw;
+    transform: rotate(1deg);
 }
+
+.obj9 {
+    left: 52.99vw;
+    top: 73vw;
+    transform: rotate(-1deg);
+}
+
+.obj10 {
+    left: 71.64vw;
+    top: 73vw;
+    transform: rotate(1deg);
+}
+
+.obj11 {
+    left: 34.3vw;
+    top: 86.30vw;
+    transform: rotate(1deg);
+}
+
+.obj12 {
+    left: 52.99vw;
+    top: 86.30vw;
+    transform: rotate(-1deg);
+}
+
+.obj13 {
+    left: 71.64vw;
+    top: 86.30vw;
+    transform: rotate(-1deg);
+}
+
 
 
 p, h2 {
@@ -70,11 +88,51 @@ p, h2 {
 }
 
 .frame-wrap .frame-text:nth-child(1 of .frame-text) {
-    top: 1.39vw;
+    top: 10vw;
+    left: 0vw;
+}
+
+.frame-wrap .frame-text:nth-child(2 of .frame-text) {
+    top: 53vw;
+    left: 0vw;
+}
+
+.frame-wrap .frame-text:nth-child(3 of .frame-text) {
+    top: 90vw;
+    left: 0vw;
 }
 
 .post1 {
     top: 19.1vw;
     left: 58.33vw;
     transform: rotate(3deg);
+}
+
+.sketches {
+    z-index: -100;
+}
+
+.sketch1 {
+    width: 50vw;
+    position: absolute;
+    top: 21vw;
+    left: 36.9vw;
+
+}
+
+.sketch1 img {
+    width: 100%;
+    height: auto;
+}
+
+.sketch2 {
+    width: 52vw;
+    position: absolute;
+    top: 59.5vw;
+    left: 35.9vw;
+}
+
+.sketch2 img {
+    width: 100%;
+    height: auto;
 }

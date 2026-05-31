@@ -15,7 +15,6 @@
 
 .frame-text {
     position: absolute;
-    left: 0.69vw;    /* adjust */
     z-index: -1;
     pointer-events: none;
     width: 35%;
@@ -81,7 +80,7 @@
 
 .postit p {
     position: absolute;
-    inset: 3.35vw 0.8vw 0.4vw 0.8vw;
+    inset: 3.45vw 0.8vw 0.4vw 0.8vw;
     display: flex;
     align-items: top;
     justify-content: center;
