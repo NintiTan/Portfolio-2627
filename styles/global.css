@@ -77,7 +77,7 @@ p {
     }
 
     body::before {
-        content: "This website is designed for laptop/desktop use. Please visit on a larger screen.";
+        content: "Mobile version coming soon. Please visit on a larger screen.";
         position: fixed;
         inset: 0;
         display: flex;
