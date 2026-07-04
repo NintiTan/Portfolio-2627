@@ -1,6 +1,26 @@
 const frame = document.getElementById("frame-wrap");
 const items = frame.querySelectorAll(".object, .postit");
 
+const updateFrameHeight = () => {
+    const frameRect = frame.getBoundingClientRect();
+    const extraSpace = window.innerWidth * 0.1;
+
+    let bottomEdge = 0;
+
+    frame.querySelectorAll(".object, .little-me, .big-me, .postit, .frame-text").forEach((item) => {
+        if (getComputedStyle(item).position === "fixed") return;
+
+        const rect = item.getBoundingClientRect();
+        bottomEdge = Math.max(bottomEdge, rect.bottom - frameRect.top);
+    });
+
+    frame.style.height = `${Math.ceil(bottomEdge + extraSpace)}px`;
+};
+
+const scheduleFrameHeightUpdate = () => {
+    requestAnimationFrame(updateFrameHeight);
+};
+
 // Start from current highest z-index in the frame
 let topZ = Math.max(
     0,
@@ -51,6 +71,8 @@ items.forEach((item) => {
             if (isObjClass || isPostClass) {
                 item.style.transform = "";
             }
+
+            scheduleFrameHeightUpdate();
         };
 
         item.addEventListener("pointermove", onMove);
@@ -178,6 +200,7 @@ const closeExpandedObj = () => {
     restoreActiveTape();
     removeOverlay();
     document.removeEventListener("pointerdown", onOutsidePointerDown, true);
+    scheduleFrameHeightUpdate();
 };
 
 const onOutsidePointerDown = (e) => {
@@ -225,3 +248,7 @@ objItems.forEach((obj) => {
         pressStart.delete(obj);
     });
 });
+
+window.addEventListener("load", scheduleFrameHeightUpdate);
+window.addEventListener("resize", scheduleFrameHeightUpdate);
+scheduleFrameHeightUpdate();

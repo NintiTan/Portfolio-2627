@@ -96,6 +96,51 @@
     width: 35.97vw;
 }
 
+.obj16 {
+    left: 0vw;
+    top: 106vw;
+    transform: rotate(1deg);
+}
+
+.obj17 {
+    left: 18.66vw;
+    top: 106vw;
+    transform: rotate(-1deg);
+}
+
+.obj18 {
+    left: 37.32vw;
+    top: 106vw;
+    transform: rotate(1deg);
+}
+
+.obj19 {
+    left: 0vw;
+    top: 117.32vw;  
+    transform: rotate(-1deg);
+}
+
+.obj20 {
+    left: 18.66vw;
+    top: 117.32vw;
+    transform: rotate(1deg);
+}
+
+.obj21 {
+    left: 37.32vw;
+    top: 117.32vw;
+    transform: rotate(-1deg);
+}
+
+.obj22 {
+    width: 35.97vw;
+    left: 55.99vw;
+    top: 107vw;
+    transform: rotate(1deg);
+}
+
+
+
 p, h2 {
     font-family: "montserrat", sans-serif;
     font-size: 1.11vw;
@@ -118,6 +163,11 @@ p, h2 {
     top: 91.45vw;
 }
 
+.frame-wrap .frame-text:nth-child(4 of .frame-text) {
+    left: 1vw;
+    top: 132.32vw;
+}
+
 .post1 {
     top: 10vw;
     left: 50vw;
@@ -134,4 +184,10 @@ p, h2 {
     top: 75.32vw;
     left: 39.32vw;
     transform: rotate(3deg);
+}
+
+.post4 {
+    top: 102.32vw;
+    left: 79.32vw;
+    transform: rotate(-3deg);
 }

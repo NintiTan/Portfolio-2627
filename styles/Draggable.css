@@ -37,9 +37,9 @@
     cursor: grabbing;
 }
 
-.image-placeholder .image, .video-placeholder video {
+.image-placeholder .image, .video-placeholder video, .video-placeholder iframe {
     width: 100%;          /* now follows .object resize */
-    height: auto;
+    height: 100%;
     display: block;
     border: 0.56vw solid #ffffff;
     box-sizing: border-box;

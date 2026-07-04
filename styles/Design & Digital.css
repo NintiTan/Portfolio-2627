@@ -2,6 +2,7 @@
 .obj1 {
     width: 55.2vw;
     left: 34.3vw;
+    transform: rotate(-0.2deg);
 }
 
 .obj2 {
@@ -139,18 +140,59 @@ p, h2 {
 
 .obj14 {
     left: 71.64vw;
-    top: 96.30vw;
+    top: 115vw;
     transform: rotate(-1deg);
 }
 
+.obj15 {
+    left: 52.99vw;
+    top: 115vw;
+    transform: rotate(1deg);
+}
+
+.obj16 {
+    left: 34.3vw;
+    top: 115vw;
+    transform: rotate(-1deg);
+}
+
+.obj17 {
+    left: 71.64vw;
+    top: 134vw;
+    transform: rotate(1deg);
+}
+
+.obj18 {
+    left: 52.99vw;
+    top: 134vw;
+    transform: rotate(-1deg);
+}
+
+.obj19 {
+    left: 34.3vw;
+    top: 134vw;
+    transform: rotate(1deg);
+}
+
 .obj20 {
-    background-color: #ffffff;
+    left: 34.3vw;
+    top: 153vw;
+    transform: rotate(-0.5deg);
 }
 
 .obj21 {
-    background-color: #ffffff;
+    left: 52.99vw;
+    top: 153vw;
+    transform: rotate(0.5deg);
 }
 
 .obj22 {
+    margin-bottom: 5vw;
+    left: 71.64vw;
+    top: 153vw;
+    transform: rotate(-0.5deg);
+}
+
+.obj20 .image, .obj21 .image, .obj22 .image {
     background-color: #ffffff;
 }
