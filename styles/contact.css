@@ -13,6 +13,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-top: 4vw;
 }
 
 .contact-info ul li p, .contact-info ul li a {
@@ -24,6 +25,47 @@
 }
 
 .frame-wrap .object {
-    width: 13.02vw;
+    width: 15.02vw;
 }
 
+.obj1 {
+    top: 0vw;
+    left: 1vw;
+    transform: rotate(-2deg);
+}
+
+.obj2 {
+    top: 22vw;
+    left: 34vw;
+    transform: rotate(1deg);
+}
+
+.obj3 {
+    top: 3vw;
+    left: 73vw;
+    transform: rotate(-1deg);
+}
+
+.obj4 {
+    top: 25vw;
+    left: 59vw;
+    transform: rotate(1deg);
+}
+
+.obj5 {
+    top: 0vw;
+    left: 48vw;
+    transform: rotate(-1deg);
+}
+
+.obj6 {
+    top: 25vw;
+    left: 6vw;
+    transform: rotate(1deg);
+}
+
+.post1 {
+    top: 2vw;
+    left: 25vw;
+    transform: rotate(3deg);
+}
