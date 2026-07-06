@@ -50,92 +50,96 @@
     transform: rotate(-1deg);
 }
 
-/* Collection02 */
+/* Collection04 */
 
 .obj9 {
     left: 0vw;
-    top: 36.63vw;
+    top: 108.4vw;
     transform: rotate(1deg);
     width: 35.97vw;
 }
 
 .obj10 {
     left: 37.32vw;
-    top: 36.63vw;
+    top: 108vw;
     transform: rotate(-1deg);
 }
 
 .obj11 {
     left: 55.99vw;
-    top: 36.63vw;
+    top: 108vw;
     transform: rotate(-1deg);
 }
 
 .obj12 {
     left: 55.99vw;
-    top: 49.95vw;
+    top: 121.32vw;
     transform: rotate(1deg);
 }
 
 .obj13 {
     left: 37.32vw;
-    top: 49.95vw;
+    top: 121.32vw;
     transform: rotate(-1deg);
 }
 
 .obj14 {
     left: 74.64vw;
-    top: 49.95vw;
+    top: 121.32vw;
     transform: rotate(1deg);
 }
 
+/* Collection03 */
+
 .obj15 {
     left: 0vw;
-    top: 72.32vw;
+    top: 75.32vw;
     transform: rotate(-1deg);
     width: 35.97vw;
 }
 
+/* Collection02 */
+
 .obj16 {
     left: 0vw;
-    top: 106vw;
+    top: 36.63vw;
     transform: rotate(1deg);
 }
 
 .obj17 {
     left: 18.66vw;
-    top: 106vw;
+    top: 36.63vw;
     transform: rotate(-1deg);
 }
 
 .obj18 {
     left: 37.32vw;
-    top: 106vw;
+    top: 36.63vw;
     transform: rotate(1deg);
 }
 
 .obj19 {
     left: 0vw;
-    top: 117.32vw;  
+    top: 48.3vw;  
     transform: rotate(-1deg);
 }
 
 .obj20 {
     left: 18.66vw;
-    top: 117.32vw;
+    top: 48.3vw;
     transform: rotate(1deg);
 }
 
 .obj21 {
     left: 37.32vw;
-    top: 117.32vw;
+    top: 48.3vw;
     transform: rotate(-1deg);
 }
 
 .obj22 {
     width: 35.97vw;
     left: 55.99vw;
-    top: 107vw;
+    top: 37.5vw;
     transform: rotate(1deg);
 }
 
@@ -155,17 +159,17 @@ p, h2 {
 }
 
 .frame-wrap .frame-text:nth-child(2 of .frame-text) {
-    top: 65.76vw;
+    top: 63.76vw;
 }
 
 .frame-wrap .frame-text:nth-child(3 of .frame-text) {
     left: 40.32vw;
-    top: 91.45vw;
+    top: 95.45vw;
 }
 
 .frame-wrap .frame-text:nth-child(4 of .frame-text) {
     left: 1vw;
-    top: 132.32vw;
+    top: 137.32vw;
 }
 
 .post1 {
@@ -175,19 +179,19 @@ p, h2 {
 }
 
 .post2 {
-    top: 39vw;
+    top: 34.5vw;
     left: 76vw;
     transform: rotate(-3deg);
 }
 
 .post3 {
-    top: 75.32vw;
+    top: 78.32vw;
     left: 39.32vw;
     transform: rotate(3deg);
 }
 
 .post4 {
-    top: 102.32vw;
+    top: 107.32vw;
     left: 79.32vw;
     transform: rotate(-3deg);
 }
