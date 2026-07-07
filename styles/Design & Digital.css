@@ -103,6 +103,16 @@ p, h2 {
     left: 0vw;
 }
 
+.frame-wrap .frame-text:nth-child(4 of .frame-text) {
+    top: 118vw;
+    left: 0vw;
+}
+
+.frame-wrap .frame-text:nth-child(5 of .frame-text) {
+    top: 158vw;
+    left: 0vw;
+}
+
 .post1 {
     top: 19.1vw;
     left: 58.33vw;
@@ -139,57 +149,63 @@ p, h2 {
 }
 
 .obj14 {
-    left: 71.64vw;
+    left: 80.97vw;
     top: 115vw;
     transform: rotate(-1deg);
+    width: 9vw;
 }
 
 .obj15 {
-    left: 52.99vw;
+    left: 62.32vw;
     top: 115vw;
     transform: rotate(1deg);
+    width: 9vw;
 }
 
 .obj16 {
-    left: 34.3vw;
+    left: 43.63vw;
     top: 115vw;
     transform: rotate(-1deg);
+    width: 9vw;
 }
 
 .obj17 {
     left: 71.64vw;
-    top: 134vw;
+    top: 115vw;
     transform: rotate(1deg);
+    width: 9vw;
 }
 
 .obj18 {
     left: 52.99vw;
-    top: 134vw;
+    top: 115vw;
     transform: rotate(-1deg);
+    width: 9vw;
 }
 
 .obj19 {
     left: 34.3vw;
-    top: 134vw;
+    top: 115vw;
     transform: rotate(1deg);
+    width: 9vw;
 }
 
 .obj20 {
     left: 34.3vw;
-    top: 153vw;
+    top: 126vw;
     transform: rotate(-0.5deg);
 }
 
 .obj21 {
     left: 52.99vw;
-    top: 153vw;
+    top: 126vw;
     transform: rotate(0.5deg);
 }
 
 .obj22 {
     margin-bottom: 5vw;
     left: 71.64vw;
-    top: 153vw;
+    top: 126vw;
     transform: rotate(-0.5deg);
 }
 
